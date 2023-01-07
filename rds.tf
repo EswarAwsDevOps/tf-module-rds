@@ -7,7 +7,7 @@ resource "aws_db_subnet_group" "rds" {
   }
 }
 resource "aws_rds_cluster" "rds" {
-  cluster_identifier      = "${var.env}-docdb"
+  cluster_identifier      = "${var.env}-rds"
   engine                  = var.engine
   engine_version          = var.engine_version
   database_name           = var.database_name
