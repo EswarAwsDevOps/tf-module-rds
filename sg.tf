@@ -5,8 +5,8 @@ resource "aws_security_group" "allow_rds" {
 
   ingress {
     description = "RDS"
-    from_port   = 27017
-    to_port     = 27017
+    from_port   = 3306
+    to_port     = 3306
     protocol    = "tcp"
     cidr_blocks = local.app_subnets_cidr
   }
